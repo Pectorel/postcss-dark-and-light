@@ -1,18 +1,30 @@
 # postcss-dark-and-light
 
-[PostCSS] plugin for lighten and darken css based on TinyColor.js.
+[PostCSS] plugin for lighten and darken css based on [TinyColor]
+and on the lighten / darken algorithm on [MdigiTools].
 
 [PostCSS]: https://github.com/postcss/postcss
+[TinyColor]: https://github.com/bgrins/TinyColor
+[MdigiTools]:  https://mdigi.tools/lighten-color
 
 ```css
 .foo {
-  /* Input example */
+  /* Darken */
+  background: darken(#c84754, 40%);
+
+  /* Lighten */
+  background: lighten(#c84754, 40%);
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  /* Darken */
+  background: #7d252e;
+
+  /* Lighten */
+  background: #de9198;
+
 }
 ```
 
