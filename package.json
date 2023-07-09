@@ -2,9 +2,14 @@
   "name": "postcss-dark-and-light",
   "version": "0.0.0",
   "description": "PostCSS plugin for lighten and darken css based on TinyColor.js",
-  "keywords": ["postcss", "css", "postcss-plugin", "postcss-dark-and-light"],
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-dark-and-light"
+  ],
   "scripts": {
-    "test": "jest --coverage && eslint ."
+    "test": "jest"
   },
   "author": "Pectorel Maison <contact@devadra.com>",
   "license": "MIT",
@@ -17,6 +22,7 @@
   },
   "devDependencies": {
     "clean-publish": "^3.4.2",
+    "dedent": "^0.7.0",
     "eslint": "^8.0.1",
     "eslint-plugin-jest": "^25.2.2",
     "jest": "^27.3.1",
@@ -30,7 +36,10 @@
       "node": true,
       "es6": true
     },
-    "extends": ["eslint:recommended", "plugin:jest/recommended"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"
+    ],
     "rules": {
       "jest/expect-expect": "off"
     }
@@ -41,5 +50,11 @@
         "statements": 100
       }
     }
+  },
+  "dependencies": {
+    "loglevel": "^1.8.1",
+    "postcss-simple-vars": "^7.0.1",
+    "postcss-value-parser": "^4.2.0",
+    "tinycolor2": "^1.6.0"
   }
 }
