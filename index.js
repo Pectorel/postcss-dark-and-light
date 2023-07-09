@@ -71,7 +71,7 @@ function handleFunc(decl, postcss) {
 // Module export
 module.exports = (opts = {}) => {
   opts = {
-    logLevel: 'debug',
+    logLevel: 'warn',
     ...opts
   }
 
